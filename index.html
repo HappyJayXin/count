@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>倒數計時</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0;">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/baseguide.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<header class="text-center">
+		<h3>倒數計時器</h3>
+		<p>
+			2.0版 新增時間顯示器
+			<span class="visible-sm visible-xs">手機無法出現鈴聲</span>
+		</p>
+	</header>
+	<main class="container">
+		<div class="text-center">
+			<span id="mystatus"></span>
+		</div>
+		<div class="">
+			<div class="form-group">
+				<div class="select">
+					<select id="time">
+						<option value="3000">3秒</option>
+						<option value="10000">10秒</option>
+						<option value="30000">30秒</option>
+						<option value="60000">1分鐘</option>
+						<option value="180000">3分鐘</option>
+						<option value="300000">5分鐘</option>
+						<option value="600000">10分鐘</option>
+						<option value="900000">15分鐘</option>
+						<option value="1200000">20分鐘</option>
+						<option value="1500000">25分鐘</option>
+						<option value="1800000">30分鐘</option>
+						<option value="2100000">35分鐘</option>
+						<option value="2400000">40分鐘</option>
+						<option value="3000000">50分鐘</option>
+						<option value="3600000">1小時</option>
+						<option value="4200000">1小時10分鐘</option>
+						<option value="4800000">1小時20分鐘</option>
+						<option value="5400000">1小時30分鐘</option>
+						<option value="6000000">1小時40分鐘</option>
+						<option value="7200000">2小時</option>
+						<option value="31536000000">一年後</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<button id="btn1" class="mybutton btn col col-sm-4" type="submit" onclick="myFunction()">開始倒數</button>
+		<button id="btn2" class="mybutton btn col col-sm-4" type="submit" onclick="stop()">關閉鈴聲</button>
+		<button id="btn3" class="mybutton btn col col-sm-4" type="submit" onclick="stopTime()">停止倒數</button>
+		
+	</main>
+
+	<script src="js/index.js"></script>
+</body>
+
+</html>
